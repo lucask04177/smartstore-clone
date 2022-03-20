@@ -1,0 +1,72 @@
+body {
+    margin: 0px;
+}
+.a-deco {
+    text-decoration: none;
+}
+
+div, input, textarea {
+    box-sizing: border-box;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.main-top {
+    width: 100%;
+    background: violet;
+    margin: auto;
+    max-height: 200px;
+}
+
+.main-navbar {
+    width: 100%;
+    padding: 10px;
+}
+
+.main-title a {
+    text-decoration: none;
+    color: white;
+    font-family: 
+}
+
+.sub-menu span{
+    padding: 10px;
+}
+
+.profile-container {
+    width: 92%;
+    background: white;
+    margin: auto;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.089);
+    padding: 17px;
+    position: relative;
+    bottom: -10px;
+}
+
+.profile-count {
+    font-size: 13px;
+}
+
+.profile-thumb {
+    width: 10%
+}
+
+.olzz-btn {
+    background: violet; 
+    padding: 8px; 
+    border: none; 
+    color: white;
+}
+
+.official-btn {
+    background: white;
+    padding: 8px;
+    border: none;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.301);
+}
