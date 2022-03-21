@@ -22,21 +22,63 @@
                 <h1><a href="index.html">Wizard of Olzz</a></h1>
             </div>
             <div class="sub-menu a-deco">
-                <span><a href="index.html">홈</a></span>
+                <span><a style="font-weight: bold;" href="index.html">홈</a></span>
                 <span><a href="#">전체상품</a></span>
                 <span><a href="#">달력</a></span>
             </div>
         </div>
         <div class="profile-container">
-            <h4 style="margin-bottom: 0px; margin-top: 0px;">세상에 하나뿐인 선물이 가득한 어느 마법사의 집</h4>
+            <h4 class="float-left" style="margin-bottom: 0px; margin-top: 0px;">세상에 하나뿐인 선물이 가득한 어느 마법사의 집</h4>
             <img class="profile-thumb float-right" src="lucaskang.jpg">
-            <span class="profile-count">방문수 7 스토어찜 3</span>
+            <span class="profile-count float-left">방문수 7 스토어찜 3</span>
             <div style="clear: both"></div>
             <button class="olzz-btn" style="width: 85%;">찜하기</button>
-            <button class="official-btn">공유</button>
+            <button class="official-btn float-right">공유</button>
+            <div style="clear: both"></div>
+        </div>
+        <div class="w-90 mt-10 analistic-age">
+            <button class="collapsible-button">
+                <span class="float-left"> &#128507; <span style="color: violet;">20대 여성</span>이 많이 찾은 인기몰</span>
+                <span class="float-right">&#11015</span>
+                <div style="clear: both;"></div>
+                <hr>
+            </button>
+            <div style="clear: both;">
+                <div class="content">
+                    <img src="age.png" class="basic-div">
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <div class="coupon-div basic-div">
+            <p><strong>올즈의 마법사</strong> 고객님을 위한 혜택</p>
+            <a href="#">
+                <div class="w-100" style="background: rgba(128, 128, 128, 0.171); padding: 10px;">
+                    <p>스토어찜 고객에게드리는 혜택!<br>1,000원 상품중복할인</p>
+                </div>
+            </a>
+
         </div>
     </div>
     </div>
 </body>
+<script>
+
+    var coll = document.getElementsByClassName("collapsible-button");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+
+</script>
 
 </html>

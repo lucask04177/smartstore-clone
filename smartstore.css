@@ -1,8 +1,14 @@
 body {
     margin: 0px;
 }
-.a-deco {
+
+body a{
     text-decoration: none;
+}
+
+.a-deco a{
+    text-decoration: none;
+    color: white;
 }
 
 div, input, textarea {
@@ -11,10 +17,18 @@ div, input, textarea {
 
 .float-left {
     float: left;
+    padding: 10px;
 }
 
 .float-right {
     float: right;
+    padding: 10px;
+}
+
+.basic-div {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
 }
 
 .main-top {
@@ -40,13 +54,12 @@ div, input, textarea {
 }
 
 .profile-container {
-    width: 92%;
+    width: 90%;
     background: white;
     margin: auto;
-    box-shadow: 3px 3px rgba(0, 0, 0, 0.089);
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.089);
     padding: 17px;
     position: relative;
-    bottom: -10px;
 }
 
 .profile-count {
@@ -69,4 +82,38 @@ div, input, textarea {
     padding: 8px;
     border: none;
     box-shadow: 1px 1px rgba(0, 0, 0, 0.301);
+}
+
+.analistic-age {
+    margin:auto;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.collapsible-button {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    border: none;
+    background: white;
+    cursor: pointer;
+}
+
+.collapsible-button:active {
+    background: rgba(128, 128, 128, 0.171);
+}
+
+.content {
+
+    overflow: hidden;
 }
