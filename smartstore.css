@@ -2,6 +2,10 @@ body {
     margin: 0px;
 }
 
+hr {
+    border: 0.5px whitesmoke solid;
+}
+
 body a{
     text-decoration: none;
 }
@@ -29,6 +33,13 @@ div, input, textarea {
     width: 90%;
     margin: auto;
     padding: 10px;
+}
+
+.basic-blank {
+    width: 100%;
+    background: rgba(128, 128, 128, 0.171);
+    height: 13px;
+    margin-top: 20px;
 }
 
 .main-top {
@@ -114,6 +125,51 @@ div, input, textarea {
 }
 
 .content {
-
+    display: 
     overflow: hidden;
+}
+
+.modal {
+    z-index: 100;
+    background: white;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    top: 0px;
+}
+
+.basic-search {
+    padding: 25px;
+    border: none;
+    color: rgba(31, 114, 31, 0.178);
+    font-size: 20px;
+}
+
+
+input[type=text]:focus {
+    outline:none;
+}
+
+.search-list-pic {
+    width: 15%; 
+    float: left;
+}
+
+.search-list-title {
+    width: 80%; 
+    float: left; 
+    padding: 10px;
+}
+
+.modal a{
+    color: black;
+}
+
+.close:hover, .close:focus {
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
 }
