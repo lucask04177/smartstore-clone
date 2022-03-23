@@ -15,7 +15,7 @@ body a{
     color: white;
 }
 
-div, input, textarea {
+div, input, textarea, a{
     box-sizing: border-box;
 }
 
@@ -39,7 +39,7 @@ div, input, textarea {
     width: 100%;
     background: rgba(128, 128, 128, 0.171);
     height: 13px;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 .main-top {
@@ -187,7 +187,65 @@ input[type=text]:focus {
 
 .all-items {
     width: 90%;
-    background: pink;
     margin: auto;
     position: relative;
+}
+
+.all-items-list {
+    border: 1px black solid;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    min-width: 100px;
+    width: 100px;
+    position: absolute;
+    right: 17px;
+    display: none;
+}
+
+.all-items-list li{
+    padding: 9px 15px;
+    font-size: 10px;
+}
+
+.law-content {
+    width: 100%;
+    background-color: rgb(202, 202, 202);
+    position: relative;
+    padding: 20px;
+}
+
+.law-detail {
+    position: absolute;
+    right: 22px;
+}
+
+.go-top-btn {
+    text-align: center;
+}
+
+.table-cell {
+    display: table-cell;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    float: left;
+    width: 50%;
+    color: black;
+    padding: 5px;
+}
+
+.naver-detail th{
+    text-align: left;
+}
+
+.naver-detail table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.naver-detail{
+    background: grey;
+    margin-top: 10px;
+    display: none;
 }

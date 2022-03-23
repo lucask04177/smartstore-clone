@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="main-top">
+    <div class="main-top" id="top">
         <div class="main-navbar">
             <div class="top-btn">
                 <a href="https://m.naver.com" target="_blank"><img src="naver-logo.png" style="width: 30px;"></a>
@@ -64,7 +64,7 @@
         <h3 class="basic-div">스토어내 상품검색</h3>
         <div class="basic-div" style="padding:0px; text-align: center;">
             <button id="myBtn" class="w-100"
-                style="text-align:center; border: none; background: rgba(128, 128, 128, 0.171);">
+                style="text-align:center; border: none; background: rgba(128, 128, 128, 0.171); margin-bottom: 10px;">
                 <p>&#127859 찾으시는 상품 키워드를 입력하세요</p>
             </button>
         </div>
@@ -78,7 +78,7 @@
                 <div class="basic-div">
                     <h2>인기상품</h2>
                     <div>
-                        <a style="target=" _blank"
+                        <a style: target="_blank;"
                             href="https://smartstore.naver.com/wizard_of_olzz/products/6420058044">
                             <div class="search-list-pic">
                                 <img src="lucaskang.jpg" style="width: 100%">
@@ -107,10 +107,10 @@
         <div class="basic-blank"></div>
         <div class="all-items">
             <h3 class="float-left" style="padding: 10px 0px; margin: 0px;">전체상품</h3>
-            <button class="float-right list-btn">최신등록순&#8595;</button>
+            <button class="float-right list-btn" style="position:relative">최신등록순&#8595;</button>
             <div style="clear: both"></div>
         </div>
-        <ul>
+        <ul class="all-items-list">
             <li>인기도순</li>
             <li>누적 판매순</li>
             <li>낮은 가격순</li>
@@ -118,6 +118,96 @@
             <li>리뷰 많은순</li>
             <li>리뷰 없는순</li>
         </ul>
+        <div class="basic-div" style="padding: 0px;">
+            <div style="width: 50%; float:left; padding: 0px 10px 0px 0px">
+                <img src="lucaskang.jpg" style="margin: 0px; width: 100%;"><br>
+                <span>시작 월 선택 드로잉&포토 세로형 탁상달력</span><br>
+                <span><strong>20,000원</strong></span>
+            </div>
+            <div style="width: 50%; float: left; padding: 0px 0px 0px 10px">
+                <img src="lucaskang.jpg" style="margin: 0px; width: 100%;"><br>
+                <span>시작 월 선택 드로잉&포토 세로형 탁상달력</span><br>
+                <span><strong>20,000원</strong></span>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+        <div class="basic-blank"></div>
+        <div class="law-content basic-div">
+            <span class="">
+                <strong>법적고지</strong>
+                <a href="#" class="law-detail" style="font-size: 12px;">자세히보기</a>
+            </span>
+            <hr>
+            <p style="color: azure; font-size:13px;">네이버㈜는 통신판매중개자이며, 통신판매의 당사자가 아닙니다. 상품, 상품정보, 거래에 관한 의무와 책임은 판매자에게
+                있습니다.</p>
+        </div>
+        <div class="basic-blank"></div>
+        <div class="go-top-btn">
+            <button class="go-top" style="font-size:18px; width:90%; background: white; border: none; padding: 20px;">
+                <a href="#top" style="color: black">
+                    TOP &#8593;
+                </a>
+            </button>
+            <div class="basic-blank"></div>
+        </div>
+        <div class="basic-div">
+            <div>
+                <a class="table-cell" href="https://m.naver.com">
+                    <span>로그인</span>
+                </a>
+                <a class="table-cell" href="https://m.naver.com">
+                    <span>전체서비스</span>
+                </a>
+                <div style="clear: both"></div>
+            </div>
+        </div>
+        <div class="basic-blank" style="text-align: center">
+            <button class="official-btn" style="width:100%; padding: 15px; background: rgb(201, 201, 201)">
+                <span><strong>네이버(주)사업자정보</strong></span>
+            </button>
+        </div>
+        <br>
+        <div class="naver-detail">
+            <table>
+                <tr>
+                    <th>대표이사</th>
+                    <td>최수연</td>
+                </tr>
+                <tr>
+                    <th>주소</th>
+                    <td>경기도 성남시 분당구 불정로 6<br>
+                        네이버 그린팩토리 13561</td>
+                </tr>
+                <tr>
+                    <th>전화</th>
+                    <td>1588-3819 (대표전화/고객센터)
+                        <br>1588-3816 (결제도용신고)</td>
+                </tr>
+                <tr>
+                    <th>문의</th>
+                    <td>1:1문의 바로가기</td>
+                </tr>
+                <tr>
+                    <th>이메일</th>
+                    <td>helpcustomer@naver.com</td>
+                </tr>
+                <tr>
+                    <th>사업자등록번호</th>
+                    <td>220-81-62517</td>
+                </tr>
+                <tr>
+                    <th>통신판매업신고번호</th>
+                    <td>제2006- 경기성남 -0692호</td>
+                </tr>
+                <tr>
+                    <th>호스팅 서비스 제공</th>
+                    <td>NAVER Cloud</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <span>와우</span>
+        </div>
     </div>
 </body>
 <script>
@@ -151,6 +241,7 @@
     span.onclick = function () {
         modal.style.display = "none";
     }
+
 
 </script>
 
