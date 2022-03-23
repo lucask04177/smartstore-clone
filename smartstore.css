@@ -95,6 +95,17 @@ div, input, textarea {
     box-shadow: 1px 1px rgba(0, 0, 0, 0.301);
 }
 
+.list-btn {
+    background: none;
+    outline: none;
+    border: none;
+    padding: 10px 0px;
+    position: absolute;
+    top: 4px;
+    right: 0px;
+    font-size: 15px;
+}
+
 .analistic-age {
     margin:auto;
 }
@@ -172,4 +183,11 @@ input[type=text]:focus {
 
 .modal {
     display: none;
+}
+
+.all-items {
+    width: 90%;
+    background: pink;
+    margin: auto;
+    position: relative;
 }

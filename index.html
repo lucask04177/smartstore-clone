@@ -32,8 +32,8 @@
             <img class="profile-thumb float-right" src="lucaskang.jpg">
             <span class="profile-count float-left">방문수 7 스토어찜 3</span>
             <div style="clear: both"></div>
-            <button class="olzz-btn" style="width: 85%;">찜하기</button>
-            <button class="official-btn float-right">공유</button>
+            <button onclick="myFunction ()" class="olzz-btn" style="width: 85%;">&#10083 찜하기</button>
+            <button onclick="myFunction ()" class="official-btn float-right">공유</button>
             <div style="clear: both"></div>
         </div>
         <div class="w-90 mt-10 analistic-age">
@@ -55,14 +55,16 @@
         <div class="coupon-div">
             <a href="#">
                 <div class="w-100" style="background: rgba(128, 128, 128, 0.171); padding: 10px;">
-                    <p style="color: black">스토어찜 고객에게드리는 혜택!<br><span style="color: green;">1,000원 상품중복할인</span></p>
+                    <p onclick="myFunction ()" style="color: black">스토어찜 고객에게드리는 혜택!<br><span
+                            style="color: green;">1,000원 상품중복할인</span></p>
                 </div>
             </a>
         </div>
 
         <h3 class="basic-div">스토어내 상품검색</h3>
         <div class="basic-div" style="padding:0px; text-align: center;">
-            <button id="myBtn" class="w-100" style="text-align:center; border: none; background: rgba(128, 128, 128, 0.171);">
+            <button id="myBtn" class="w-100"
+                style="text-align:center; border: none; background: rgba(128, 128, 128, 0.171);">
                 <p>&#127859 찾으시는 상품 키워드를 입력하세요</p>
             </button>
         </div>
@@ -70,44 +72,60 @@
             <div class="modal-content">
                 <div class="w-100">
                     <span style="font-size: 20px;" class="close">&#9194</span>
-                    <input class="basic-div basic-search" type="text"
-                        placeholder="검색어를 입력해주세요">
+                    <input class="basic-div basic-search" type="text" placeholder="검색어를 입력해주세요">
                 </div>
                 <hr>
                 <div class="basic-div">
                     <h2>인기상품</h2>
                     <div>
-                        <a style="target="_blank" href="https://smartstore.naver.com/wizard_of_olzz/products/6420058044">
-                        <div class="search-list-pic">
-                            <img src="lucaskang.jpg" style="width: 100%">
-                        </div>
-                        <div class="search-list-title">
-                            <span>시작 월 선택 드로잉&포토 세로형 탁상달력</span><br>
-                            <span><strong>20,000원</strong></span>
-                        </div>
-                    </a>
+                        <a style="target=" _blank"
+                            href="https://smartstore.naver.com/wizard_of_olzz/products/6420058044">
+                            <div class="search-list-pic">
+                                <img src="lucaskang.jpg" style="width: 100%">
+                            </div>
+                            <div class="search-list-title">
+                                <span>시작 월 선택 드로잉&포토 세로형 탁상달력</span><br>
+                                <span><strong>20,000원</strong></span>
+                            </div>
+                        </a>
                         <div style="clear: both"></div>
                         <hr>
                         <a target="_blank" href="https://smartstore.naver.com/wizard_of_olzz/products/6420432839">
-                        <div class="search-list-pic">
-                            <img src="lucaskang.jpg" style="width: 100%">
-                        </div>
+                            <div class="search-list-pic">
+                                <img src="lucaskang.jpg" style="width: 100%">
+                            </div>
                             <div class="search-list-title">
                                 <span>시작 월 선택 드로잉&포토 가로형 탁상달력</span><br>
                                 <span><strong>20,000원</strong></span>
                             </div>
                         </a>
-                            <div style="clear: both"></div>
+                        <div style="clear: both"></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="basic-blank">
-            
+        <div class="basic-blank"></div>
+        <div class="all-items">
+            <h3 class="float-left" style="padding: 10px 0px; margin: 0px;">전체상품</h3>
+            <button class="float-right list-btn">최신등록순&#8595;</button>
+            <div style="clear: both"></div>
         </div>
+        <ul>
+            <li>인기도순</li>
+            <li>누적 판매순</li>
+            <li>낮은 가격순</li>
+            <li>최신등록순</li>
+            <li>리뷰 많은순</li>
+            <li>리뷰 없는순</li>
+        </ul>
     </div>
 </body>
 <script>
+    // Button Alret for Login Modal //
+    function myFunction() {
+        alert("로그인이 필요한 서비스 입니다. 로그인 하시겠습니까?");
+    }
+
 
     var coll = document.getElementsByClassName("collapsible-button");
     var i;
@@ -116,7 +134,7 @@
         coll[i].addEventListener("click", function () {
             this.classList.toggle("active");
             var content = this.nextElementSibling;
-            if (content.style.display === "mpme") {
+            if (content.style.display === "block") {
                 content.style.display = "none";
             } else {
                 content.style.display = "block";
@@ -127,13 +145,13 @@
     var modal = document.getElementById("myModal");
     var btn = document.getElementById("myBtn");
     var span = document.getElementsByClassName("close")[0];
-    btn.onclick = function() {
+    btn.onclick = function () {
         modal.style.display = "block";
     }
-    span.onclick = function() {
+    span.onclick = function () {
         modal.style.display = "none";
     }
-    
+
 </script>
 
 </html>
