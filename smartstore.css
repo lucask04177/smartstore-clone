@@ -247,5 +247,16 @@ input[type=text]:focus {
 .naver-detail{
     background: grey;
     margin-top: 10px;
-    display: none;
+    display: block;
+}
+
+.bottom-contents{
+    text-align: center;
+    padding: 15px;
+}
+
+.bottom-contents a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
 }
